@@ -166,3 +166,25 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 1000;
 }
+/* Estilo da Rotação (Rodapé da Home) */
+.container-rotacao {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    height: 120px;
+    background: #fdf2f2;
+    border: 1px solid #e1b1b1;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#texto-rotacao {
+    font-size: 1.2rem;
+    color: #b37d7d;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out;
+}
