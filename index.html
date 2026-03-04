@@ -2,56 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duas Mãos - Bordados Personalizados</title>
+    <title>Duas Mãos - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-<header class="cabecalho">
-    <section class="logotipo-container">
-        <img src="..//images/logo.jpeg" alt="Logo Duas Mãos" class="foto-logo">
-        <h1>Duas Mãos</h1>
-    </section>
-    <nav class="navegacao-topo">
-        <button class="botao-login" onclick="window.location.href='login.html'">Login</button>
-        <button class="botao-login" style="background-color: #fdf2f2; color: #b37d7d; border: 1px solid #e1b1b1; margin-left: 10px;" onclick="window.location.href='cadastro.html'">Cadastrar</button>
-        <span style="font-size: 1.5rem; margin-left: 15px; cursor: pointer;">🛒</span>
-    </nav>
-</header>
+    <header class="cabecalho">
+        <a href="index.html" class="logotipo-container">
+            <img src="..//images/logo.jpeg" class="foto-logo">
+            <h1>Duas Mãos</h1>
+        </a>
+        <nav>
+            <button class="botao-topo btn-login" onclick="location.href='login.html'">Login</button>
+            <button class="botao-topo btn-cadastro" onclick="location.href='cadastro.html'">Cadastrar</button>
+            <i class="fas fa-shopping-cart" style="margin-left:15px; font-size:1.2rem; cursor:pointer;"></i>
+        </nav>
+    </header>
 
     <main>
+        <div style="text-align:center; padding: 20px;">
+            <p>Bordados eletrônicos feitos com amor.</p>
+        </div>
+
         <section class="banner-destaque">
-            <h2>Coleção Baby 2024</h2>
-            <p>Bordados feitos à mão com tecnologia eletrônica</p>
+            <h1 style="font-size: 3rem;">Banner</h1>
         </section>
 
         <section class="vitrine-produtos">
-            <article class="card-produto">
+            <div class="card-produto">
                 <img src="..//images/produto1.jpeg" class="imagem-produto">
-                <h3 class="titulo-produto">Toalha Ursa Alice</h3>
-                <a href="https://wa.me/5534998878348?text=Olá! Quero saber o preço da Toalha Alice" target="_blank" class="etiqueta-preco">Ver Preço</a>
-            </article>
-
-            <article class="card-produto">
-                <img src="..//images/produto4.jpeg" class="imagem-produto">
-                <h3 class="titulo-produto">Toalha Dinossauro</h3>
-                <a href="https://wa.me/5534998878348?text=Olá! Quero saber o preço da Toalha Dinossauro" target="_blank" class="etiqueta-preco">Ver Preço</a>
-            </article>
-
-            </section>
-
-        <footer class="rotacao-imagens">
-            <h3 id="texto-rotacao">Carregando ofertas...</h3>
-        </footer>
+                <h3>Toalha Alice</h3>
+                <a href="https://wa.me/5534998878348" target="_blank" class="etiqueta-preco">Ver Preço</a>
+            </div>
+            <div class="card-produto">
+                <img src="..//images/produto3.jpeg" class="imagem-produto">
+                <h3>Kit Davi</h3>
+                <a href="https://wa.me/5534998878348" target="_blank" class="etiqueta-preco">Ver Preço</a>
+            </div>
+            <div class="card-produto">
+                <img src="..//images/produto5.jpeg" class="imagem-produto">
+                <h3>Kit Luys Otávio</h3>
+                <a href="https://wa.me/5534998878348" target="_blank" class="etiqueta-preco">Ver Preço</a>
+            </div>
+            <div class="card-produto">
+                <img src="..//images/produto6.jpeg" class="imagem-produto">
+                <h3>Manta Isabela</h3>
+                <a href="https://wa.me/5534998878348" target="_blank" class="etiqueta-preco">Ver Preço</a>
+            </div>
+        </section>
     </main>
 
-    <a href="https://wa.me/5534998878348?text=Olá! Gostaria de fazer um orçamento personalizado." 
-       class="whatsapp-flutuante" target="_blank">
+    <a href="https://wa.me/5534998878348" class="whatsapp-flutuante" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <script src="script.js"></script>
 </body>
 </html>
