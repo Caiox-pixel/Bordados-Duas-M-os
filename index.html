@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duas Mãos - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -9,13 +10,11 @@
 <body>
     <header class="cabecalho">
         <a href="index.html" class="logotipo-container">
-            <img src="..//images/logo.jpeg" class="foto-logo">
+            <img src="..//images/logo.jpeg" class="foto-logo" alt="Logo Duas Mãos">
             <h1>Duas Mãos</h1>
         </a>
         <nav>
-            <button class="botao-topo btn-login" onclick="location.href='login.html'">Login</button>
-            <button class="botao-topo btn-cadastro" onclick="location.href='cadastro.html'">Cadastrar</button>
-            <i class="fas fa-shopping-cart" style="margin-left:15px; cursor:pointer;"></i>
+            <i class="fas fa-shopping-cart" style="font-size: 1.5rem; cursor:pointer; color: #b37d7d;"></i>
         </nav>
     </header>
 
@@ -26,20 +25,29 @@
 
         <section class="vitrine-produtos">
             <div class="card-produto">
+                <img src="WhatsApp Image 2026-03-12 at 22.59.36.jpeg" class="imagem-produto" alt="Bordado Personalizado Novo">
+                <h3>Bordado Especial</h3>
+                <a href="https://wa.me/553498878348?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20deste%20bordado!" target="_blank" class="etiqueta-preco">Ver Preço</a>
+            </div>
+
+            <div class="card-produto">
                 <img src="..//images/produto1.jpeg" class="imagem-produto">
                 <h3>Toalha De Urso</h3>
                 <a href="https://wa.me/553498878348?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!" target="_blank" class="etiqueta-preco">Ver Preço</a>
             </div>
+            
             <div class="card-produto">
                 <img src="..//images/produto3.jpeg" class="imagem-produto">
                 <h3>Kit De Banho</h3>
                 <a href="https://wa.me/553498878348?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!" target="_blank" class="etiqueta-preco">Ver Preço</a>
             </div>
+
             <div class="card-produto">
                 <img src="..//images/produto5.jpeg" class="imagem-produto">
                 <h3>Kit Toalha</h3>
                 <a href="https://wa.me/553498878348?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!" target="_blank" class="etiqueta-preco">Ver Preço</a>
             </div>
+
             <div class="card-produto">
                 <img src="..//images/produto6.jpeg" class="imagem-produto">
                 <h3>Manta Pós Banho</h3>
@@ -61,12 +69,15 @@
         let i = 0;
         setInterval(() => {
             const el = document.getElementById('texto-rotacao');
-            el.style.opacity = 0;
-            setTimeout(() => {
-                el.textContent = frases[i];
-                el.style.opacity = 1;
-                i = (i + 1) % frases.length;
-            }, 500);
+            if(el) {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                    el.textContent = frases[i];
+                    el.style.opacity = 1;
+                    i = (i + 1) % frases.length;
+                }, 500);
+            }
         }, 3000);
-        </script>
-        <script src="script.js">w</script>
+    </script>
+</body>
+</html>
