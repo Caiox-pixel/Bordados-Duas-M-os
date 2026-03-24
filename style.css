@@ -37,10 +37,42 @@ body { background-color: #fffafb; color: #5d4037; }
 .whatsapp-flutuante { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-decoration: none; transition: 0.3s; }
 .whatsapp-flutuante:hover { transform: scale(1.1); }
 
-.instagram-flutuante { position: fixed; bottom: 30px; right: 100px; background:     45deg,
+.instagram-flutuante {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  background: linear-gradient(
+    45deg,
     #f09433,
     #e6683c,
     #dc2743,
     #cc2366,
-    #bc1888; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-decoration: none; transition: 0.3s; }
-.instagram-flutuante:hover { transform: scale(1.1); }
+    #bc1888
+  );
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.instagram-flutuante:hover {
+  transform: scale(1.1);
+}
+{
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
